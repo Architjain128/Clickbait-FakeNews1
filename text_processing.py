@@ -2,6 +2,11 @@ import json
 import re
 import nltk
 from nltk.corpus import stopwords
+from spacy.en import English
+
+nlp = English()
+
+nlp = 
 
 lemm = nltk.stem.WordNetLemmatizer()
 
@@ -183,4 +188,5 @@ if __name__ == '__main__':
     with open("dataset/processed_string.json", "w") as outfile:
         json.dump(data_clickbait, outfile)
     
+
     # print(clean_text("Apple's iOS 9 'App thinning' feature will give your phone's storage a boost"))
