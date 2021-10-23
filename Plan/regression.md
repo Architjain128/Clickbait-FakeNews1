@@ -2,9 +2,11 @@
 ### LR
 ### Gradient Bossting
 
-## Pulit
+## Pulkit
 ### Random forest
 
 ### Palash
+### Adaboost Regression
 
 ### Aryan
+### Ridge Regression (RR):

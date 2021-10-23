@@ -2,11 +2,11 @@ import json
 import re
 import nltk
 from nltk.corpus import stopwords
-from spacy.en import English
+# from spacy.en import English
 
-nlp = English()
+# nlp = English()
 
-nlp = 
+# nlp = 
 
 lemm = nltk.stem.WordNetLemmatizer()
 
