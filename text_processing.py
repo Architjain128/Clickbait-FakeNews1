@@ -169,10 +169,15 @@ if __name__ == '__main__':
         json_list = list(json_file)
 
     data_clickbait = {}
-    for i in range(min(len(json_list),10000)):
+    count = 0
+    for i in range(len(json_list)):
         result = json.loads(json_list[i])
-        data_clickbait[result['id']] = []
-        data_clickbait[result['id']].append(result['postText'])
+        if len(result['postText'][0]) > 0:
+            data_clickbait[result['id']] = []
+            data_clickbait[result['id']].append(result['postText'])
+            count += 1
+        if count == 10000:
+            break
 
     with open('dataset/truth1.jsonl', 'r') as json_file:
         json_list1 = list(json_file)
