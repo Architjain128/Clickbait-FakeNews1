@@ -165,27 +165,28 @@ def clean_text(text):
     return text
 
 if __name__ == '__main__':
-    with open('dataset/instances.jsonl', 'r') as json_file:
+    with open('dataset/instances1.jsonl', 'r') as json_file:
         json_list = list(json_file)
 
     data_clickbait = {}
-    for i in json_list:
-        result = json.loads(i)
+    for i in range(min(len(json_list),10000)):
+        result = json.loads(json_list[i])
         data_clickbait[result['id']] = []
         data_clickbait[result['id']].append(result['postText'])
 
-    with open('dataset/truth.jsonl', 'r') as json_file:
+    with open('dataset/truth1.jsonl', 'r') as json_file:
         json_list1 = list(json_file)
 
-    for i in json_list1:
-        result = json.loads(i)
-        data_clickbait[result['id']].append(result['truthMean'])
+    for i in range(len(json_list1)):
+        result = json.loads(json_list1[i])
+        if result['id'] in data_clickbait.keys():
+            data_clickbait[result['id']].append(result['truthMean'])
 
     r = 0
     for i in  data_clickbait.keys():
         data_clickbait[i][0] = clean_text(str(data_clickbait[i][0]))
 
-    with open("dataset/processed_string.json", "w") as outfile:
+    with open("dataset/processed_string10k.json", "w") as outfile:
         json.dump(data_clickbait, outfile)
     
 
