@@ -186,10 +186,14 @@ if __name__ == '__main__':
         if result['id'] in data_clickbait.keys():
             data_clickbait[result['id']].append(result['truthMean'])
 
-    r = 0
+    delete_keys = []
     for i in  data_clickbait.keys():
         data_clickbait[i][0] = clean_text(str(data_clickbait[i][0]))
+        if len(data_clickbait[i][0]) == 0:
+            delete_keys.append(i)
 
+    for i in delete_keys:
+        data_clickbait.pop(i)
     with open("dataset/processed_string10k.json", "w") as outfile:
         json.dump(data_clickbait, outfile)
     
