@@ -31,7 +31,7 @@ scaler = StandardScaler()
 x = scaler.fit_transform(x)
 
 # using 30% of data for testing
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4)
 
 #Fit the model 
 ridgereg = Ridge(alpha=0.1,normalize=True)
