@@ -150,17 +150,16 @@ def clean_text(text):
     text = re.sub(r'<br />', ' ', text)
     text = re.sub(r'\'', ' ', text)
 
-    text = text.split()
-    after_stopword = []
-    for w in text:
-        if w not in stopword:
-            after_stopword.append(w)
-    text = " ".join(after_stopword)
-
+    # text = text.split()
+    # after_stopword = []
+    # for w in text:
+    #     if w not in stopword:
+    #         after_stopword.append(w)
+    # text = " ".join(after_stopword)
     text =  nltk.WordPunctTokenizer().tokenize(text)
     for k in range(len(text)):
         text[k] = lemm.lemmatize(text[k])
-    
+
     text = " ".join(text)
     return text
 
@@ -194,5 +193,5 @@ if __name__ == '__main__':
     with open("dataset/processed_string10k.json", "w") as outfile:
         json.dump(data_clickbait, outfile)
     
-
+    # print(clean_text("It's not over."))
     # print(clean_text("Apple's iOS 9 'App thinning' feature will give your phone's storage a boost"))
