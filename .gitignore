@@ -1,2 +1,7 @@
+<<<<<<< HEAD
+.env/*
+dataset/vectorized_spacy.json
+=======
 .vscode
 .history
+>>>>>>> 6d5c7f0bc330de1eb2bc570465f734425a05350d

@@ -1,12 +1,12 @@
-## Archit 
-### LR
+## Archit :
 ### Gradient Bossting
 
-## Pulkit
+## Pulkit :
 ### Random forest
 
-### Palash
+### Palash :
 ### Adaboost Regression
 
-### Aryan
-### Ridge Regression (RR):
+### Aryan :
+### Ridge Regression 
+### Linear Regression
