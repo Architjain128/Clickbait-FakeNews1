@@ -38,14 +38,6 @@ ridgereg = Ridge(alpha=0.1,normalize=True)
 ridgereg.fit(x_train,y_train)
 y_pred = ridgereg.predict(x_test)
 
-# used this to calculate abs err and got best alpha around 0.1
-# sum = 0.0
-# l = len(y_test)
-# for i in range(l):
-#     sum += abs(y_test[i]-y_pred[i])
-# sum/=l
-# print(sum)
-
 mse = 0.0
 l = len(y_test)
 for i in range(l):
