@@ -175,7 +175,7 @@ if __name__ == '__main__':
             data_clickbait[result['id']] = []
             data_clickbait[result['id']].append(result['postText'])
             count += 1
-        if count == 10000:
+        if count == 20000:
             break
 
     with open('dataset/truth1.jsonl', 'r') as json_file:
@@ -194,7 +194,7 @@ if __name__ == '__main__':
 
     for i in delete_keys:
         data_clickbait.pop(i)
-    with open("dataset/processed_string10k.json", "w") as outfile:
+    with open("dataset/processed_string20k.json", "w") as outfile:
         json.dump(data_clickbait, outfile)
     
     # print(clean_text("It's not over."))
