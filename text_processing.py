@@ -160,7 +160,7 @@ def clean_text(text):
     for k in range(len(text)):
         text[k] = lemm.lemmatize(text[k])
 
-    text = " ".join(text)
+    # text = " ".join(text)
     return text
 
 if __name__ == '__main__':
@@ -194,8 +194,9 @@ if __name__ == '__main__':
 
     for i in delete_keys:
         data_clickbait.pop(i)
-    with open("dataset/processed_string20k.json", "w") as outfile:
+    with open("dataset/processed_token20k.json", "w") as outfile:
         json.dump(data_clickbait, outfile)
-    
-    # print(clean_text("It's not over."))
+    # newd = clean_text("...")
+    # print(len(newd))
+    # print(clean_text("..."))
     # print(clean_text("Apple's iOS 9 'App thinning' feature will give your phone's storage a boost"))
