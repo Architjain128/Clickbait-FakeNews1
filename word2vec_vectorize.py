@@ -1,3 +1,4 @@
+# This file should be run after running the tf-idf_calc.py file, because we need the tf-idf values for each token of the doc
 import json
 import math
 import time
@@ -16,13 +17,13 @@ model_words = list(model.index_to_key)
 dim = 300
 
 # for tf-idf scores
-with open("./dataset/tf-idf.json") as f:
+with open("./dataset/20k_tf-idf.json") as f:
     data1 = json.load(f)
     
 N = len(data1)  # total number of docs
 
 # for click-bait intensities
-with open('./dataset/final.json') as f:
+with open('./dataset/processed_string20k.json') as f:
     data2 = json.load(f)
     
 vector_op = {}
@@ -52,7 +53,7 @@ for id in data1:
     c+=1
     print(c)
 
-with open('./dataset/10k_word2vec_vectorized.json', 'w') as f:
+with open('./dataset/vectorized_word2vec20k.json', 'w') as f:
      f.write(json.dumps(vector_op))
      
 end = time.time()

@@ -1,6 +1,7 @@
+# this file should be run before, running the word2vec_vectorizer.py file (This file generates the tf-idf for tokens)
 import json
 
-with open("./dataset/final.json") as f:
+with open("./dataset/processed_string20k.json") as f:
     data = json.load(f)
     
 idf = {}
@@ -37,11 +38,5 @@ for id in data:
         out_dict[id].append((word,word_freq[word],idf[word]))
         
 
-with open('./dataset/tf-idf.json', 'w') as f:
+with open('./dataset/20k_tf-idf.json', 'w') as f:
      f.write(json.dumps(out_dict))
-        
-    
-
-    
-    
-    
