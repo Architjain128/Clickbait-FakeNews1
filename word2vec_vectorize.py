@@ -52,7 +52,7 @@ for id in data1:
     c+=1
     print(c)
 
-with open('./dataset/word2vec_vectorized.json', 'w') as f:
+with open('./dataset/10k_word2vec_vectorized.json', 'w') as f:
      f.write(json.dumps(vector_op))
      
 end = time.time()
