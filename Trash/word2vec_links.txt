@@ -1,2 +1,0 @@
-word2vec_10k_vectorized:- https://drive.google.com/file/d/1MJj8wcWtoQnHyzbxTnc4a-XbQQyod2U6/view?usp=sharing
-word2vec_20k_vectorized:- https://drive.google.com/file/d/1e1l8eRgPcoFT2YiA7spUF_PY6qbAMFor/view?usp=sharing
