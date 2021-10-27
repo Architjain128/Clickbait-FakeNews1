@@ -6,3 +6,4 @@ dataset/clickbait_dataset/vectorized_word2vec20k.json
 dataset/fakenews_dataset/Fake.csv
 dataset/fakenews_dataset/True.csv
 dataset/fakenews_dataset/manual_testing.csv
+dataset/clickbait_dataset/300dims_vectorized_spacy20k/300dims_vectorized_spacy20k.json
