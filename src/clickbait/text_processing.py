@@ -149,6 +149,8 @@ def clean_text(text):
     text = re.sub(r'[_"\-;%()|+&=*%.,!?:#$@\[\]/]', ' ', text)
     text = re.sub(r'<br />', ' ', text)
     text = re.sub(r'\'', ' ', text)
+    text = re.sub('[^a-zA-Z0-9]', " ",re.sub('&lt;|&gt;|&amp;|&quot;'," ",text))
+    text = text.replace('  ',' ').lstrip().rstrip()
 
     # text = text.split()
     # after_stopword = []
