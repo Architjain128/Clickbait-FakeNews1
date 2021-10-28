@@ -54,8 +54,8 @@ if __name__ == '__main__':
     
     
     
-    ### USE THE BELOW CODE TO READ FROM CSV FILE ####
-    data = pd.read_csv("../../dataset/fakenews_dataset/processed5k.csv") 
+    ### USE THE BELOW CODE TO READ FROM CSV FILE ####  (Every Time u process the CSV file make sure to manually write 'id' in the first column of the csv file)
+    data = pd.read_csv("../../dataset/fakenews_dataset/processed44k.csv") 
     newData = {}
     rows, cols = data.shape
     
@@ -80,7 +80,7 @@ if __name__ == '__main__':
         
         print(i)
         
-    with open('../../dataset/fakenews_dataset/300dims_vectorized_spacy5k.json', 'w') as f:
+    with open('../../dataset/fakenews_dataset/300dims_vectorized_spacy44k.json', 'w') as f:
         json.dump(newData, f)
         
         
