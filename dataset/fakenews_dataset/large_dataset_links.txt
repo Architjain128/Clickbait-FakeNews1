@@ -1,0 +1,2 @@
+300dims_spacy_vectorized20k.json:- https://drive.google.com/file/d/18NU6EJBu038GdELOet0Xl8Y9oZ6Nr8RQ/view?usp=sharing
+300dims_spacy_vectorized44k.json:- https://drive.google.com/file/d/18Osdu2ydF_936fBAGEiRmxVPX3-hocAY/view?usp=sharing
