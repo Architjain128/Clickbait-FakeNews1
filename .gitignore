@@ -16,3 +16,9 @@ dataset/fakenews_dataset/300dims_vectorized_spacy20k.zip
 dataset/fakenews_dataset/300dims_vectorized_spacy10k/300dims_vectorized_spacy10k.json
 dataset/fakenews_dataset/300dims_vectorized_spacy5k/300dims_vectorized_spacy5k.json
 dataset/fakenews_dataset/300dims_vectorized_spacy20k/300dims_vectorized_spacy20k.json
+dataset/fakenews_dataset/labels.tab
+dataset/fakenews_dataset/nela-gt-2019.db.tar.bz2
+dataset/fakenews_dataset/nela-gt-2019.json.tar.bz2
+dataset/fakenews_dataset/README-1.md
+dataset/fakenews_dataset/README.md
+dataset/fakenews_dataset/source-metadata.json
