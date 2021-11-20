@@ -44,7 +44,7 @@ if __name__ == '__main__':
     
     ### USE THE BELOW CODE TO READ FROM JSON FILE####
     
-    f = open('../../dataset/clickbait_dataset/processed_string10k.json','r')
+    f = open('../../dataset/clickbait_dataset/processed_string20k.json','r')
     data = json.load(f)
     newData = {}
     c = 0
@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
         # print(type(data), type(data[i]))
         # break
-    with open('../../dataset/clickbait_dataset/vectorized_roberta10k.json', 'w') as f:
+    with open('../../dataset/clickbait_dataset/vectorized_roberta20k.json', 'w') as f:
         json.dump(newData, f)
     
     
