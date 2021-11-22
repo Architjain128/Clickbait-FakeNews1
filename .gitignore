@@ -32,3 +32,4 @@ dataset/fakenews_dataset/nelagt
 dataset/clickbait_dataset/vectorized_roberta20k.zip
 dataset/clickbait_dataset/vectorized_roberta20k.json
 dataset/fakenews_dataset/fakenews_roberta_44k.json
+src/fakenews/naive_bayes_withcb44k.pkl
